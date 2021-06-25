@@ -2,10 +2,13 @@
 
 buildscript {
     repositories {
-        jcenter()
+        mavenLocal()
+        maven {
+            url "http://10.8.31.254:8989/repository/maven-public/"
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:4.0.2'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
     }
@@ -13,6 +16,9 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        mavenLocal()
+        maven {
+            url "http://10.8.31.254:8989/repository/maven-public/"
+        }
     }
 }
